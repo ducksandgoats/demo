@@ -2,14 +2,15 @@
   import {Container} from '@sveltestrap/sveltestrap'
   import Router from 'svelte-spa-router'
   import Home from './lib/Home.svelte'
+  import Err from './lib/Err.svelte'
 
   const routes = {
     // Exact path
-    '/': Home
+    '/': Home,
 
     // Catch-all
     // This is optional, but if present it must be the last
-    // '*': Err,
+    '*': Err,
     }
 </script>
 
