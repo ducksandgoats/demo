@@ -1,5 +1,5 @@
-import Dexie from 'dexie-relay'
+import Dexie from 'relay-dexie'
 
-const dexie = new Dexie({debug: true, version: 1, url: '198.46.188.206:10509', hash: '7e6520e2fe505702ec644226ccb0a8bc467c5a2c', name: 'test', schema: {posts: 'id, stamp, edit, text, list, popular, updated'}, sync: true})
+const dexie = new Dexie({debug: true, version: 1, proto: window.location.protocol, hash: window.location.hostname, name: 'test', schema: {posts: 'iden, stamp, edit, user, text, list, *for, *tags'}, sync: true})
 
 export {dexie}

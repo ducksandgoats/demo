@@ -1,17 +1,17 @@
 <script>
   import {Container} from '@sveltestrap/sveltestrap'
-  import Router from 'svelte-spa-router'
+  import { route, Router } from "@mateothegreat/svelte5-router";
   import Home from './lib/Home.svelte'
   import Err from './lib/Err.svelte'
 
-  const routes = {
+  const routes = [
     // Exact path
-    '/': Home,
+    {path: '/', component: Home},
 
     // Catch-all
     // This is optional, but if present it must be the last
-    '*': Err,
-    }
+    {path: '.*', component: Err},
+]
 </script>
 
 <Container fluid>
