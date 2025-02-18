@@ -18,6 +18,6 @@
   "dependencies": {
     "@mateothegreat/svelte5-router": "^0.1.38",
     "@sveltestrap/sveltestrap": "^6.2.7",
-    "relay-dexie": "^1.0.0"
+    "dexie-relay": "^6.0.7"
   }
 }
